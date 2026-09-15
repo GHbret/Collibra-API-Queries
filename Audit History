@@ -1,0 +1,1 @@
+Here is a sample query to pull Activity History: https://<instance-name>.collibra.com/rest/2.0/activities?limit=1000&sortField=timestamp&sortOrder=DESC; pulls ID, timestamp, user, activitytype, cause, affectedname, affected_type, businessitem_name, field, old_value, new_value, JSON payload/description_raw
