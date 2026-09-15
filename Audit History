@@ -11,7 +11,7 @@ GET https://<instance-name>.collibra.com/rest/2.0/activities?resourceType=Workfl
 **Example** (replace `<instance-name>` with your own Collibra instance):
 
 ```
-https://bailine-fed.collibra.com/rest/2.0/activities?resourceType=WorkflowInstance&limit=1000&sortField=timestamp&sortOrder=DESC
+https://customer.collibra.com/rest/2.0/activities?resourceType=WorkflowInstance&limit=1000&sortField=timestamp&sortOrder=DESC
 ```
 
 ## Query Parameters
