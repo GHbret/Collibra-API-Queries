@@ -1,1 +1,30 @@
-Here is a sample query to pull Activity History: https://<instance-name>.collibra.com/rest/2.0/activities?limit=1000&sortField=timestamp&sortOrder=DESC; pulls ID, timestamp, user, activitytype, cause, affectedname, affected_type, businessitem_name, field, old_value, new_value, JSON payload/description_raw
+Collibra Activity History — Sample Query
+
+Query the Collibra REST API to pull Activity History records.
+
+Endpoint
+GET https://<instance-name>.collibra.com/rest/2.0/activities?resourceType=WorkflowInstance&limit=1000&sortField=timestamp&sortOrder=DESC
+
+Example (replace <instance-name> with your own Collibra instance):
+
+https://bailine-fed.collibra.com/rest/2.0/activities?resourceType=WorkflowInstance&limit=1000&sortField=timestamp&sortOrder=DESC
+Query Parameters
+Parameter	Description
+resourceType	Filters activities by resource type (e.g., WorkflowInstance)
+limit	Maximum number of results to return (up to 1000)
+sortField	Field to sort results by (e.g., timestamp)
+sortOrder	Sort direction — ASC or DESC
+Fields Returned
+Field	Description
+id	Unique identifier of the activity record
+timestamp	Date/time the activity occurred
+user	User who performed the activity
+activityType	Type of activity (e.g., create, update, delete)
+cause	What triggered the activity
+affectedName	Name of the affected asset/object
+affectedType	Type of the affected asset/object
+businessItemName	Name of the related business item
+field	Field that was changed
+oldValue	Value before the change
+newValue	Value after the change
+descriptionRaw	Raw JSON payload / description of the activity
