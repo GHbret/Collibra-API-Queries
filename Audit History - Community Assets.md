@@ -44,7 +44,7 @@ Recent changes only (since 2026-09-01 00:00 UTC):
 GET https://<instance-name>.collibra.com/rest/2.0/activities?contextId=c3f25ca7-db84-4ba2-a9b1-d0e423db3e84&resourceDiscriminators=Asset&resourceDiscriminators=Attribute&resourceDiscriminators=Relation&resourceDiscriminators=Responsibility&startDate=1788220800000&offset=0&limit=1000
 ```
 
-Scope as of 2026-09-29: 1,217 assets across 23 domains and 16 sub-communities (Forest Service, National Interagency Fire Center, FPAC Business Center, Steampunk, etc.). Because the community is a parent with nested sub-communities, the fallback loop must cover every sub-community.
+Scope as of 2026-09-29: 1,217 assets across 23 domains and 16 sub-communities (Forest Service, National Interagency Fire Center, FPAC Business Center, Steampunk, etc.). Because the community is a parent with nested sub-communities, the fallback loop must cover every sub-community.  Note - all assets here are examples, completely made up or from public data sources.
 
 ## Query Parameters
 
